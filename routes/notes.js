@@ -28,17 +28,17 @@ notes.post('/',(req,res) => {
     }
 });
 
-notes.delete('/:id',(req,res) => {
-    let noteId = req.params.id.toString();
-    console.log(`\n\nDELETE note request for noteId: ${noteId}`);
+// notes.delete('/:id',(req,res) => {
+//     let noteId = req.params.id.toString();
+//     console.log(`\n\nDELETE note request for noteId: ${noteId}`);
 
-    let data = JSON.parse( readFromFile('./db/db.json'));
-    const newData = data.filter( note => note.id.toString() !== noteId );
-    readAndAppend(JSON.stringify(newData),'./db/db.json');
+//     let data = JSON.parse( readFromFile('../db/db.json'));
+//     const newData = data.filter( note => note.id.toString() !== noteId );
+//     readAndAppend(JSON.stringify(newData),'../db/db.json');
 
-    console.log(`\nSuccessfully deleted note with id : ${noteId}`);
+//     console.log(`\nSuccessfully deleted note with id : ${noteId}`);
 
-    res.json(newData);
-})
+//     res.json(newData);
+// })
 
 module.exports = notes;
