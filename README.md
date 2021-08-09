@@ -3,7 +3,7 @@
 
 
 # Description:
-This is a simple Note Taker application that allows users to add, view saved notes.This application uses an express backend and save and retrieve note data from a JSON file.
+This is a simple Note Taker application that allows users to add, view saved notes and delete any particular note .This application uses an express backend and save and retrieve note data from a JSON file.
 
 ## Deployed application :
 [Note Taker](https://mayuri-note-taker.herokuapp.com/)
